@@ -27,3 +27,8 @@
 *.exe
 *.out
 *.app
+
+#
+
+conf.h
+Makefile
