@@ -1,7 +1,7 @@
 # HSES_NODE_OLED_sample_programs
 
 * Sample programs for HSES_NODE_OLED (ESP8266 + OLED)
-* ハンブルソフト製<a href="http://www.humblesoft.com/products/HSES_NODE_OLED/">HSES_NODE_OLED</a>用サンプルプログラム集です。 
+* ハンブルソフト製<a href="http://www.humblesoft.com/products/HSES-NODE/">HSES_NODE_OLED</a>用サンプルプログラム集です。 
 * ESP8266 Arduino用のスケッチになっています。
 
 ## analog clock
