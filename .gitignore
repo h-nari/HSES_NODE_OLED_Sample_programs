@@ -32,3 +32,4 @@
 
 conf.h
 Makefile
+__pycache__
