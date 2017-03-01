@@ -36,7 +36,7 @@
  * Python用ライブラリを提供、Python画像ライブラリPillowの画僧を、そのまま
  表示可能
 
- * <a href="https://www.youtube.com/DZ9h0Leanrk">
+ * <a href="https://youtu.be/DZ9h0Leanrk">
  添付サンプルプログラム dispDemo.py実行動画</a>
- * <a hef="https://www.youtube.com/embed/rIRIXXnOoCE">
+ * <a hef="https://youtu.be/rIRIXXnOoCE">
 添付サンプルプログラム dispImage.py実行動画</a>
