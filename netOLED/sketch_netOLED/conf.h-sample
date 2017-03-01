@@ -1,0 +1,11 @@
+#define USE_OTA 	1
+#define DUMP_SPIFFS	1
+
+#define WIFI_SSID 	"your_ssid"
+#define	WIFI_PASSWORD	"your_wifi_password"
+
+#if USE_OTA
+// #define OTA_HOSTNAME "your_ota_hostname"	// if needed
+#define OTA_PASSWORD 	"your_ota_password"
+// #define OTA_PORT	8266			// your OTA_PORT if needed
+#endif

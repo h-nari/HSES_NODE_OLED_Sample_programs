@@ -22,3 +22,19 @@
 * 西暦、和暦、日付、曜日表示
 * 時:分:秒 表示
 <br clear="left"/>
+
+## NetOLED
+
+* UDPパケットで画像情報を受け取り、OLEDに表示するプログラム
+* PC側でPython等で画像を作成し、送信
+ * Python用ライブラリを提供、Python画像ライブラリPillowの画僧を、そのまま
+ 表示可能
+
+ * 添付サンプルプログラム dispDemo.py実行動画
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DZ9h0Leanrk" frameborder="0" allowfullscreen></iframe>
+
+
+* 添付サンプルプログラム dispImage.py実行動画
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rIRIXXnOoCE" frameborder="0" allowfullscreen></iframe>
