@@ -25,16 +25,18 @@
 
 ## NetOLED
 
+<table><tr><td>
+<a href="https://github.com/h-nari/HSES_NODE_OLED_Sample_programs/blob/master/img/170301a3.jpg?raw=true"><img src="https://github.com/h-nari/HSES_NODE_OLED_Sample_programs/blob/master/img/170301a3.jpg?raw=true" hspace="40" width="300" /></a>
+</td><td>
+ <a href="https://github.com/h-nari/HSES_NODE_OLED_Sample_programs/blob/master/img/170301a5.jpg?raw=true"><img src="https://github.com/h-nari/HSES_NODE_OLED_Sample_programs/blob/master/img/170301a5.jpg?raw=true" hspace="40" width="300" /></a>
+</td></tr></table>
+
 * UDPパケットで画像情報を受け取り、OLEDに表示するプログラム
 * PC側でPython等で画像を作成し、送信
  * Python用ライブラリを提供、Python画像ライブラリPillowの画僧を、そのまま
  表示可能
 
- * 添付サンプルプログラム dispDemo.py実行動画
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DZ9h0Leanrk" frameborder="0" allowfullscreen></iframe>
-
-
-* 添付サンプルプログラム dispImage.py実行動画
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rIRIXXnOoCE" frameborder="0" allowfullscreen></iframe>
+ * <a href="https://www.youtube.com/DZ9h0Leanrk">
+ 添付サンプルプログラム dispDemo.py実行動画</a>
+ * <a hef="https://www.youtube.com/embed/rIRIXXnOoCE">
+添付サンプルプログラム dispImage.py実行動画</a>
