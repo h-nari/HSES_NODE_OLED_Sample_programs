@@ -1,0 +1,11 @@
+#define WIFI_SSID 	"ssid"
+#define	WIFI_PASSWORD	"password"
+
+#define USE_OTA	1
+
+#if USE_OTA
+// #define OTA_HOSTNAME 	"HSES_OLED_NODE_1"
+#define OTA_PASSWORD 	"your_ota_password"
+#define OTA_PORT	8266
+#endif
+
