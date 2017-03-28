@@ -45,13 +45,8 @@
 
 * UDPパケットで画像情報を受け取り、OLEDに表示するプログラム
 * PC側でPython等で画像を作成し、送信
- * Python用ライブラリを提供、Python画像ライブラリPillowの画僧を、そのまま
- 表示可能
-
-
-* <a href="https://youtu.be/DZ9h0Leanrk">
-添付サンプルプログラム dispDemo.py実行動画</a>
+ * Python用ライブラリを提供、Python画像ライブラリPillowの画僧を、そのまま表示可能
+* <a href="https://youtu.be/DZ9h0Leanrk">添付サンプルプログラム dispDemo.py実行動画</a>
  * https://youtu.be/DZ9h0Leanrk
-* <a hef="https://youtu.be/rIRIXXnOoCE">
-添付サンプルプログラム dispImage.py実行動画</a>
-  * https://youtu.be/rIRIXXnOoCE
+* <a hef="https://youtu.be/rIRIXXnOoCE">添付サンプルプログラム dispImage.py実行動画</a>
+ * https://youtu.be/rIRIXXnOoCE
