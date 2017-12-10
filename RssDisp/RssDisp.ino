@@ -99,8 +99,8 @@ Layout layouts[] = {
 
 AppState gState;
 int httpCode;
-int iItem;
-int iLayout;
+uint8_t iItem;
+uint8_t iLayout;
 
 RssBuf rssBuf;
 RssParser rss;
@@ -238,10 +238,11 @@ void datetime_disp(LayoutElem *elem, bool bInit)
   if(bInit || t != t0){
     struct tm *tm = localtime(&t);
     const char *wd[7] = {"日","月","火","水","木","金","土"};
+		oled.fillRect(x,y,w,h,0);
 		oled.setTextColor(1,0);
     oled.setTextSize(textSize);
 		oled.alignPrintf(x+w-1,y, TA_RIGHT, TA_TOP,
-										 "%2d/%2d(%s) %d:%d", 
+										 "%d/%d(%s) %2d:%02d", 
 										 tm->tm_mon+1, tm->tm_mday, wd[tm->tm_wday],
 										 tm->tm_hour, tm->tm_min);
     t0 = t;
@@ -264,9 +265,10 @@ void date_disp(LayoutElem *elem, bool bInit)
     const char *wd[7] = {"日","月","火","水","木","金","土"};
 		oled.setTextColor(1,0);
     oled.setTextSize(textSize);
+		oled.fillRect(x,y,w,h,0);
 		if(textSize == 1)
 			oled.alignPrintf(x+w-1,y, TA_RIGHT, TA_TOP,
-											 "%04d年%0d月%2d(%s)", tm->tm_year + 1900,
+											 "%04d年%d月%d(%s)", tm->tm_year + 1900,
 											 tm->tm_mon+1, tm->tm_mday, wd[tm->tm_wday]);
 		else if(textSize == 2)
 			oled.alignPrintf(x+w-1,y, TA_RIGHT, TA_TOP,
@@ -288,10 +290,11 @@ void time_disp(LayoutElem *elem, bool bInit)
 
   if(t != t0){
     struct tm *tm = localtime(&t);
+		oled.fillRect(x,y,w,h,0);
     oled.setTextSize(textSize);
 		oled.setTextColor(1,0);
     oled.alignPrintf(x+w-1,y, TA_RIGHT, TA_TOP,
-										 "%02d:%02d:%02d", tm->tm_hour, tm->tm_min, tm->tm_sec);
+										 "%2d:%02d:%02d", tm->tm_hour, tm->tm_min, tm->tm_sec);
     t0 = t;
   }
 }
