@@ -1,5 +1,8 @@
 #define TAG_NAME_MAX	20
 #define TEXT_MAX	80*5
+#ifdef PATH_MAX
+#undef PATH_MAX
+#endif
 #define PATH_MAX	256
 
 class XmlParser {
