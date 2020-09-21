@@ -56,7 +56,14 @@ typedef struct {
   const char *figerprint;
 } site_t;
 
-const char *yahoo_fingerprint = "2c4cc1be32d3a6021bbce7f918290af709972130";
+const char *yahoo_fingerprint =
+    "1E8BB7F438189245FCC779DD4DA9912BBC2F70CF";  // SHA-1 until 2021/8/27
+const char *impress_fingerprint =
+    "01A4812C19BE0854B91500A627CC17796F4F4CDE";  // SHA-1 until 2022//30
+const char *jiji_fingerprint =
+    "F9F5CB7D14E5B4A104352DD9670301A1BF350E10";  // SHA-1 until 2020/12/8
+const char *asahi_fingerprint =
+    "921342996D60845FDC1BCE7E9F700D20047A3E0F";// SHA-1 until 2021/9/5
 
 const site_t site[] = {
     {"Yahoo Sports", 10, "https://news.yahoo.co.jp/pickup/sports/rss.xml",
@@ -66,13 +73,10 @@ const site_t site[] = {
     {"sankei", 10, "https://headlines.yahoo.co.jp/rss/san-dom.xml",
      yahoo_fingerprint},
     {"Impress", 10, "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf",
-     "f90c73b7caeb1bf496a1ff539e4ca5ae414d04ce"},
-    {"jiji", 10, "https://www.jiji.com/rss/ranking.rdf",
-     "f9f5cb7d14e5b4a104352dd9670301a1bf350e10"},
-    {"Make", 5, "https://feeds.feedburner.com/make_jp",
-     "058b82bcfeb3f43afa4f7745d2d048e36e29bdce"},
+     impress_fingerprint},
+    {"jiji", 10, "https://www.jiji.com/rss/ranking.rdf", jiji_fingerprint},
     {"asahi", 10, "https://rss.asahi.com/rss/asahi/newsheadlines.rdf",
-     "5a5e16a96325bb81694d2b8e6f302a2e0945ee17"},
+     asahi_fingerprint},
     {NULL},
 };
 
@@ -137,7 +141,7 @@ static void site_next() {
   if (pSite->name == NULL) {
     unsigned long tNow = millis();
     pSite = site;
-    Serial.printf("loop time: %d sec\n", (tNow - tStart)/1000);
+    Serial.printf("loop time: %d sec\n", (tNow - tStart) / 1000);
   }
 }
 
