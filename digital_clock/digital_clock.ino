@@ -9,9 +9,10 @@
 
 #include <Adafruit_GFX.h>		// https://github.com/adafruit/Adafruit-GFX-Library
 #include <Fontx.h>							// https://github.com/h-nari/Fontx
-#include <FsFontx.h>			
 #include <Humblesoft_GFX.h>			// https://github.com/h-nari/Humblesoft_GFX
 #include <Humblesoft_SSD1306.h>	// https://github.com/h-nari/Humblesoft_SSD1306
+#include <fontx/ILGH16XB.h>
+#include <fontx/ILGZ16XB.h>
 
 #if USE_OTA
 #include <WiFiUdp.h>
@@ -26,7 +27,7 @@
 #define OLED_CS		   2
 
 Humblesoft_SSD1306 oled(OLED_DC, OLED_RESET, OLED_CS);
-FsFontx fontx("/ILGH16XB.FNT","/ILGZ16XB.FNT");
+RomFontx fontx(ILGH16XB,ILGZ16XB);
 
 void setup()
 {
@@ -101,7 +102,7 @@ void loop()
 		
 #if KANJI
 		oled.setTextSize(1);
-		oled.printf(" %4d / 平成%d年\n", tm->tm_year+1900, tm->tm_year-88);
+		oled.printf(" %4d / 令和%d年\n", tm->tm_year+1900, tm->tm_year-118);
 		oled.printf("%2d月%2d日  %s曜日\n",
 								tm->tm_mon+1, tm->tm_mday, wd[tm->tm_wday]);
 		oled.setTextSize(2);
